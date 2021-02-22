@@ -1,0 +1,31 @@
+{
+    "name": "php-remix/dependency-autoload",
+    "description": "Dependency autoloader for php-remix framework",
+    "type": "library",
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "php-remix/framework": "dev-master",
+        "symfony/var-dumper": "^5.2",
+        "phpunit/phpunit": "^8.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "moqiaoduo",
+            "email": "415372363@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PhpRemix\\DependencyAutoload\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "tests/"
+        }
+    }
+}
